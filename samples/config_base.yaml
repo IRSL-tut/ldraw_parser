@@ -1,0 +1,42 @@
+##
+## settings
+##
+GeneralSettings:
+  format: RobotAssemblerYaml
+  formatVersion: 1.0
+  angleUnit: degree ## degree/radian
+  lengthUnit: mm ## m, mm, (inch)
+  massUnit: g ## g,kg
+  ## inertia-tensor(unit) massUnit * lengthUnit^2
+  ## translation: [x, y, z]
+  ## rotation: [ax, ay, az, angle]
+
+##ConnectingConstraintSettings:
+##   connecting-type-list:
+##   connecting-type-match-list:
+##   connecting-configuration-list:
+ConnectingConstraintSettings:
+  connecting-type-list: [PEG_P, PEG_H, AXL_P, AXL_F, AXL_H]
+  ## pair: [a, b] ## configuration represents transoform from a to b
+  connecting-type-match-list:
+    -
+      pair: [PEG_P, PEG_H]
+      allowed-configuration: [flip-y, fixed]
+    -
+      pair: [AXL_P, AXL_F]
+      allowed-configuration: [fixed]
+    -
+      pair: [AXL_P, AXL_H]
+      allowed-configuration: [flip-y, fixed]
+  ##
+  connecting-configuration-list:
+    -
+      name: fixed
+      description: 'fixed with same coords'
+    -
+      name: flip-y
+      description: 'flip over / rotate 180[deg] around y-axis'
+      rotation: [0, 1, 0, 180]
+#
+# python3 gen_assembler.py | cat config_base.yaml - > ldraw_assembler_config.yaml
+#

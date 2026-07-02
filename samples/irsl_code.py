@@ -57,7 +57,8 @@ parts_list = [
     # Pin with friction
     '4459.dat',
     # Pin long
-    '32556.dat',
+    #'32556.dat',
+    '32556a.dat',
     # Pin Joiner
     '62462.dat',
     # Beam 2x0.5
@@ -95,7 +96,8 @@ parts_list = [
     # Beam 3 with Center Axle
     '7229.dat',
     # Bush 1/2
-    '32123.dat',
+    #'32123.dat',
+    '32123a.dat',
     # Cross block 2 x 2 split (Axle/Twin Pin)
     '41678.dat',
     # Cross block 2 x 2 (Axle/Twin Pin)
@@ -126,12 +128,18 @@ parts_list = [
     '32034.dat', #Angle Connector #2 (180 degree)
     '32269.dat', #Gear 20 Tooth Double Bevel
     '32270.dat', #Gear 12 Tooth Double Bevel
-    '33299.dat', #Beam  3 x  0.5 Liftarm with Boss and Pin with Closed Central Axle Hole
+    '33299a.dat', #Beam  3 x  0.5 Liftarm with Boss and Pin with Closed Central Axle Hole
     '60484.dat', #Beam  3 x  3 T-shaped
     ]
 
 # locations to be checked
-_cc_list_=('peghole.dat', 'axle.dat', 'axlehole.dat', 'axlehol5.dat', 'axlehol4.dat', 'axl2hole.dat', 'connect.dat', 'connect8.dat', '4-4cyli.dat', 'axlehol8.dat', 'axleend2.dat')
+_cc_list_=('peghole.dat',
+           'axleend2.dat',
+           'axle.dat', 'axlehole.dat', 'axlehol8.dat', 'axlehol5.dat', 'axlehol4.dat', 'axl2hole.dat',
+           'connect.dat', 'connect2.dat', 'connect8.dat', 'connhole.dat',
+           'confric.dat', '4-4cyli.dat',
+           'stud.dat', 'stud2.dat',
+           )
 
 ### locations have to be checked INVERT 
 def checkCC(cc):
@@ -181,12 +189,25 @@ def convData(data):
         res[k] = _clusterData( data[k] )
     return res
 
-def makeCoords(data, scale=0.01):
-    mat, rot, scl, name, inv, key = data
-    pos = scale*mat[:3, 3]
-    return coordinates(pos, rot)
+def getPos(dat, scale=0.0004):
+  return scale*dat[0][:3, 3]
 
-def dumpData(topDir='/tmp/', draw=False, scale=0.01): ## di, lp, parts_list
+def getRot(dat):
+  if np.linalg.det(dat[1]) < 0:
+    print("det < 0, ", det[1])
+  return dat[1]
+
+def makeCoords(dat, scale=0.0004):
+  res=coordinates(getPos(dat, scale=scale))
+  res.rot = getRot(dat)
+  return res
+
+#def makeCoords(data, scale=0.0004):
+#    mat, rot, scl, name, inv, key = data
+#    pos = scale*mat[:3, 3]
+#    return coordinates(pos, rot)
+
+def dumpData(topDir='/tmp/', draw=False, scale=0.0004): ## di, lp, parts_list
     data = {}
     for pname in parts_list:
         pt=lp.instantiate(lib.loadParts(pname), lib)

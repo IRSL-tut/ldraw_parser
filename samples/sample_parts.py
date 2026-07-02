@@ -1,3 +1,4 @@
+import numpy as np
 import pickle
 exec(open('irsl_code.py').read())
 
@@ -5,64 +6,30 @@ with open('parts/data.pkl', 'rb') as f:
   data=pickle.load(f)
 newdata = convData(data)
 
-def getPos(dat):
-  return 0.01*dat[0][:3, 3]
+def getPos(dat, scale=0.0004):
+  return scale*dat[0][:3, 3]
 
 def getRot(dat):
+  if np.linalg.det(dat[1]) < 0:
+    print("det < 0, ", det[1])
   return dat[1]
 
-def makeCoords(dat):
-  res=coordinates(getPos(dat))
+def makeCoords(dat, scale=0.0004):
+  res=coordinates(getPos(dat, scale=scale))
   res.rot = getRot(dat)
   return res
 
-exec(open('/home/irsl/temp/irsl_cnoid_plugin/samples/pick_obj.py').read())
-di = DrawInterface()
-po = PickedObject()
-
-def draw_parts(name, color=[0.8, 0.15, 0.15], drawLegend=True):
-    obj = mkshapes.loadMesh(f'parts/{name}.stl', color=color)
-    di.addObject(obj)
-    for idx, k in enumerate(newdata[name].keys()):
-        for n, p in enumerate(newdata[name][k]):
-            pos = getPos(p)
-            bx = make_box(idx, length=0.02)
-            bx.object.name = f'{k}%{n}'
-            c = coordinates(pos)
-            c.transform(bx)
-            bx.newcoords(c)
-            po.addObject(bx)
-    po.genShapeMap()
-    ### draw text
-    if drawLegend:
-      mat = ib.getCameraMatrix()
-      cam, fov = ib.getCameraCoords()
-      ivmat = np.linalg.inv(mat)
-      sv = ib.currentSceneView()
-      width = sv.width()
-      height = sv.height()
-      base = 6 * ivmat @ fv(width*0.01, height*0.05, 1)
-      cam.transformVector(base)
-      for idx, k in enumerate(newdata[name].keys()):
-          bx = make_box(idx, length=0.02)
-          txt = mkshapes.makeText(k, textHeight=0.14) ##
-          pos = base + (cam.y_axis * idx * 0.21)
-          bx.locate(pos, coordinates.wrt.world)
-          cds=ib.makeCameraFacingCoords(pos)
-          cds.translate(fv(0.03, -0.07, 0)) ##
-          txt.newcoords(cds)
-          di.addObject(bx)
-          di.addObject(txt)
-
-
-
 #### Data
 n_pin_ = '3673.dat'
+
 n_br08 = '3702.dat'
 n_br12 = '3895.dat'
 n_br16 = '3703.dat'
+
 n_bm__ = '32009.dat'
+
 n_axl8 = '3707.dat'
+
 n_bsh0 = '32039.dat'
 
 nlst = [

@@ -7,7 +7,7 @@ with open('parts/data.pkl', 'rb') as f:
 newdata = convData(data)
 
 ## draw parts
-exec(open('/home/irsl/temp/irsl_cnoid_plugin/samples/pick_obj.py').read())
+exec(open('/choreonoid_ws/install/share/choreonoid-2.3/irsl_cnoid_plugin/samples/pick_obj.py').read())
 di = DrawInterface()
 po = PickedObject()
 

@@ -1,31 +1,5 @@
 # exec(open('/choreonoid_ws/install/share/irsl_choreonoid/sample/irsl_import.py').read())
 
-# connect.dat -> connect
-# connect8.dat -> connect(short)
-
-# Axle 3, 4, 6, 8
-# axleend2
-
-# Axle stop 3, 4, 5
-# axleend2
-# 8 2 8 4-4cyli.dat ???
-
-# Axle Pin
-# axleend2
-# connect8
-
-# Pin
-# connect
-
-# Brick
-# peghole -> pin / axle
-
-# Beam
-# peghole -> pin(rot) / axle(lin+rot)
-
-# Angle Connector #1
-# 6-1-6 4-4cyli.dat ??
-
 # parts to be checked
 parts_list = [
     # Axle 3, 4, 6, 8
@@ -106,8 +80,6 @@ parts_list = [
     '32557.dat',
     # Cross block 3 x 2 (Axle/Tripple Pin)
     '63869.dat',
-    # Cross block 1 x 3 (Axle/Pin/Pin)
-    '42003.dat',
     # Cross block 1 x 3 (Axle/Pin/Pin)
     '42003.dat',
     # Cross block 1 x 3 (Axle/Pin/Axle)

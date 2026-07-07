@@ -32,7 +32,7 @@ class GenParts(object):
         _color = [0.8, 0.3, 0.3] if color is None else color
         print(f'''{offset}type: {self.ldraw_name}
 {offset}class: "{self.name}"
-{offset}description: T.B.D.
+{offset}description: "{self.ldraw_name}"
 {offset}visual:
 {offset}  -
 {offset}    type: mesh
@@ -139,13 +139,50 @@ class GL_axlehol(GenList):
 {offset}  translation: {trs['translation']}
 {offset}  rotation: {trs['rotation']}'''
 
-_classes_ = (GL_connect, GL_peghole, GL_axleend2, GL_axlehol)
+class GL_stud(GenList):
+    ldraw_types=('stud.dat', 'stud2.dat', )
+    def __init__(self, tp=None):
+        super().__init__()
+        self.setType(tp)
+    def print(self, coords, name='', offset=''):
+        trs = ru.make_translation_rotation(coords)
+        return f'''{offset}-
+{offset}  name: {name} # {self.ldraw_type}
+{offset}  types: [ STUD_P ]
+{offset}  translation: {trs['translation']}
+{offset}  rotation: {trs['rotation']}'''
+
+## extra Functions for xxx
+class OppositeStud(object):
+    ldraw_types=('stud.dat', 'stud2.dat', )
+    def __init__(self, offset=1, prefix='pp'):
+        self.cntr = 0
+        self.offset = offset
+    def __call__(self, data):
+        for list_each_types in data.values():
+            if list_each_types[0][3] in self.ldraw_types: ## type
+                typename = list_each_types[0][3]
+                for itpl in list_each_types:
+                    nm = f'{prefix}{self.cntr:03}'
+                    self.cntr += 1
+                    coords = makeCoords(itpl)
+                    coords.translate(fv(0, 0, offset*0.0004))
+                    trs = ru.make_translation_rotation(coords)
+                    return f'''{offset}-
+{offset}  name: {name} # opposite {typename}
+{offset}  types: [ STUD_H ]
+{offset}  translation: {trs['translation']}
+{offset}  rotation: {trs['rotation']}'''
+
+_classes_ = (GL_connect, GL_peghole, GL_axleend2, GL_axlehol, GL_stud)
+
 ## generate genmap
 genmap = {}
 for cls in _classes_:
     for tp in cls.ldraw_types:
         genmap[tp] = cls(tp)
 
+#_extra_function_map_ = {}
 #>genmap = {
 #>    'connect.dat'   : GL_connect(),
 #>    'connect2.dat'  : GL_connect(),

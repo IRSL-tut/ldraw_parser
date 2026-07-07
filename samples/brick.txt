@@ -1,0 +1,38 @@
+#
+3005.dat : 0 Brick  1 x  1
+3004.dat : 0 Brick  1 x  2
+3622.dat : 0 Brick  1 x  3
+3010.dat : 0 Brick  1 x  4
+3009.dat : 0 Brick  1 x  6
+3008.dat : 0 Brick  1 x  8
+6111.dat : 0 Brick  1 x 10
+6112.dat : 0 Brick  1 x 12
+2465.dat : 0 Brick  1 x 16
+#
+14716.dat : 0 Brick  1 x  1 x  3
+3245a.dat : 0 Brick  1 x  2 x  2
+49311.dat : 0 Brick  1 x  4 x  3
+39266.dat : 0 Brick  1 x  5 x  2
+3754.dat : 0 Brick  1 x  6 x  5
+#
+3003.dat : 0 Brick  2 x  2
+3002.dat : 0 Brick  2 x  3
+3001.dat : 0 Brick  2 x  4
+2456.dat : 0 Brick  2 x  6
+3007.dat : 0 Brick  2 x  8
+3006.dat : 0 Brick  2 x 10
+#
+30145.dat : 0 Brick  2 x  2 x  3
+30144.dat : 0 Brick  2 x  4 x  3
+6213.dat : 0 Brick  2 x  6 x  3
+#
+2356.dat : 0 Brick  4 x  6
+6212.dat : 0 Brick  4 x 10
+4202.dat : 0 Brick  4 x 12
+#
+4201.dat : 0 Brick  8 x  8
+4204.dat : 0 Brick  8 x 16
+#
+733.dat : 0 Brick 10 x 10
+#
+30072.dat : 0 Brick 12 x 24

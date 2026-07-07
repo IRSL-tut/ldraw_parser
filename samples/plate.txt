@@ -1,0 +1,40 @@
+#
+3024.dat : 0 Plate  1 x  1
+3023b.dat : 0 Plate  1 x  2
+3623.dat : 0 Plate  1 x  3
+3710.dat : 0 Plate  1 x  4
+78329.dat : 0 Plate  1 x  5
+3666.dat : 0 Plate  1 x  6
+3460.dat : 0 Plate  1 x  8
+4477.dat : 0 Plate  1 x 10
+60479.dat : 0 Plate  1 x 12
+#
+3022.dat : 0 Plate  2 x  2
+3021.dat : 0 Plate  2 x  3
+3020.dat : 0 Plate  2 x  4
+3795.dat : 0 Plate  2 x  6
+3034.dat : 0 Plate  2 x  8
+3832.dat : 0 Plate  2 x 10
+2445.dat : 0 Plate  2 x 12
+91988.dat : 0 Plate  2 x 14
+4282.dat : 0 Plate  2 x 16
+#
+11212.dat : 0 Plate  3 x  3
+#
+3031.dat : 0 Plate  4 x  4
+3032.dat : 0 Plate  4 x  6
+3035.dat : 0 Plate  4 x  8
+3030.dat : 0 Plate  4 x 10
+3029.dat : 0 Plate  4 x 12
+#
+3958.dat : 0 Plate  6 x  6
+3036.dat : 0 Plate  6 x  8
+3033.dat : 0 Plate  6 x 10
+3028.dat : 0 Plate  6 x 12
+3456.dat : 0 Plate  6 x 14
+3027.dat : 0 Plate  6 x 16
+3026.dat : 0 Plate  6 x 24
+#
+41539.dat : 0 Plate  8 x  8
+728.dat : 0 Plate  8 x 11
+92438.dat : 0 Plate  8 x 16

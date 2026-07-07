@@ -1,0 +1,27 @@
+#
+819.dat : 0 Baseplate  8 x 12
+3865.dat : 0 Baseplate  8 x 16
+u568.dat : 0 Baseplate  8 x 22
+3497.dat : 0 Baseplate  8 x 24
+4187.dat : 0 Baseplate  8 x 32
+#
+397.dat : 0 Baseplate 10 x 16
+#
+3867.dat : 0 Baseplate 16 x 16
+6850.dat : 0 Baseplate 16 x 18
+210.dat : 0 Baseplate 16 x 22
+3334.dat : 0 Baseplate 16 x 24
+#
+u1454.dat : 0 Baseplate 14 x 20
+#
+u1193.dat : 0 Baseplate 24 x 24
+3645.dat : 0 Baseplate 24 x 40
+3811.dat : 0 Baseplate 32 x 32
+4186.dat : 0 Baseplate 48 x 48
+#
+782.dat : 0 Baseplate 50 x 50
+
+
+
+
+

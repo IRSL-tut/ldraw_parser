@@ -1,4 +1,5 @@
 # exec(open('/choreonoid_ws/install/share/irsl_choreonoid/sample/irsl_import.py').read())
+import re
 
 # parts to be checked
 parts_list = [
@@ -179,7 +180,16 @@ def makeCoords(dat, scale=0.0004):
 #    pos = scale*mat[:3, 3]
 #    return coordinates(pos, rot)
 
-def dumpData(topDir='/tmp/', draw=False, scale=0.0004): ## di, lp, parts_list
+def append_parts_list(fname, parts_list):
+    re_exp = re.compile(r'(.*[^\s])\s*:.*')
+    with open(fname, 'r') as f:
+        for ln in f.read().split('\n'):
+            res = re_exp.match(ln)
+            if res:
+                nm = res.groups()[0]
+                parts_list.append(nm)
+
+def dumpData(parts_list, topDir='/tmp/', draw=False, scale=0.0004): ## di, lp, parts_list
     data = {}
     for pname in parts_list:
         pt=lp.instantiate(lib.loadParts(pname), lib)
@@ -193,7 +203,11 @@ def dumpData(topDir='/tmp/', draw=False, scale=0.0004): ## di, lp, parts_list
             di.addObjects(cdslst)
         res = []
         for a,b,c in aa:
-            rot, scl = IC.computeRotationScaling(a[:3, :3])
+            org = a[:3, :3]
+            rot, scl = IC.computeRotationScaling(org)
+            if np.prod(np.diagonal(scl)) == 0:
+                print("## INVALID ## ", b, a)
+                IC.recomputeScalingRotation(2, org, scl, rot)## z mirror
             x = scl[0,0]
             y = scl[1,1]
             z = scl[2,2]

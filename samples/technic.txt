@@ -1,0 +1,112 @@
+#
+3704.dat : 0 Technic Axle  2
+4519.dat : 0 Technic Axle  3
+3705.dat : 0 Technic Axle  4
+3706.dat : 0 Technic Axle  6
+3707.dat : 0 Technic Axle  8
+3737.dat : 0 Technic Axle 10
+3708.dat : 0 Technic Axle 12
+#
+32073.dat : 0 Technic Axle  5
+44294.dat : 0 Technic Axle  7
+60485.dat : 0 Technic Axle  9
+23948.dat : 0 Technic Axle 11
+50451.dat : 0 Technic Axle 16
+#
+24316.dat : 0 Technic Axle  3 with Stop
+87083.dat : 0 Technic Axle  4 with Stop
+15462.dat : 0 Technic Axle  5 with Stop
+55013.dat : 0 Technic Axle  8 with Stop
+6587.dat : 0 Technic Axle  3 with Stud
+#
+3749.dat : 0 Technic Axle Pin
+3673.dat : 0 Technic Pin
+4459.dat : 0 Technic Pin with Friction
+32556a.dat : 0 Technic Pin Long without Friction with Single Slot
+62462.dat : 0 Technic Pin Joiner Round with Slot
+65249.dat : 0 Technic Axle Pin Long without Friction with  2L Axle
+#
+6541.dat : 0 Technic Brick  1 x  1 with Hole
+3700.dat : 0 Technic Brick  1 x  2 with Hole
+#
+32000.dat : 0 Technic Brick  1 x  2 with Holes
+5565.dat : 0 Technic Brick  1 x  3 with Holes
+3701.dat : 0 Technic Brick  1 x  4 with Holes
+3894.dat : 0 Technic Brick  1 x  6 with Holes
+3702.dat : 0 Technic Brick  1 x  8 with Holes
+2730.dat : 0 Technic Brick  1 x 10 with Holes
+3895.dat : 0 Technic Brick  1 x 12 with Holes
+32018.dat : 0 Technic Brick  1 x 14 with Holes
+3703.dat : 0 Technic Brick  1 x 16 with Holes
+#
+32039.dat : 0 Technic Connector (Axle/Bush) Type 1
+6553.dat : 0 Technic Connector (Axle) with Axle 1.5
+#
+18654.dat : 0 Technic Beam  1
+43857.dat : 0 Technic Beam  2
+32523.dat : 0 Technic Beam  3
+32316.dat : 0 Technic Beam  5
+32524.dat : 0 Technic Beam  7
+40490.dat : 0 Technic Beam  9
+32525.dat : 0 Technic Beam 11
+41239.dat : 0 Technic Beam 13
+32278.dat : 0 Technic Beam 15
+32017.dat : 0 Technic Beam  5 x  0.5
+32063.dat : 0 Technic Beam  6 x  0.5
+32065.dat : 0 Technic Beam  7 x  0.5
+#
+60483.dat : 0 Technic Beam  2 Liftarm
+33299a.dat : 0 Technic Beam  3 x  0.5 Liftarm with Boss and Pin with Closed Central Axle Hole
+60484.dat : 0 Technic Beam  3 x  3 T-shaped
+41677.dat : 0 Technic Beam  2 x  0.5 Liftarm
+6632.dat : 0 Technic Beam  3 x  0.5 Liftarm
+32449.dat : 0 Technic Beam  4 x  0.5 Liftarm
+11478.dat : 0 Technic Beam  5 x  0.5 Liftarm with Axle Holes at Both Ends
+#
+32009.dat : 0 Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double
+32140.dat : 0 Technic Beam  2 x  4 Liftarm Bent 90
+32526.dat : 0 Technic Beam  3 x  5 Bent 90
+32056.dat : 0 Technic Beam  3 x  3 x  0.5 Liftarm Bent 90
+32271.dat : 0 Technic Beam  3 x  7 Liftarm Bent 53.13
+32348.dat : 0 Technic Beam  4 x  4 Liftarm Bent 53.13
+6629.dat : 0 Technic Beam  4 x  6 Liftarm Bent 53.13
+#
+43464.dat : 0 Technic Beam  4 x  3 Liftarm Triangle
+99773.dat : 0 Technic Beam  5 x  3 x  0.5 Liftarm Triangle Type 2
+2905.dat : 0 Technic Beam  5 x  3 x  0.5 Liftarm Triangle
+#
+7229.dat : 0 Technic Beam  3 with Center Axle Hole
+2391.dat : 0 Technic Beam  7 with Alternating Holes
+6612.dat : 0 Technic Beam  9 with Alternating Holes
+73507.dat : 0 Technic Beam 11 with Alternating Holes
+71710.dat : 0 Technic Beam 15 with Alternating Holes
+2477.dat : 0 Technic Beam  3 x  5 Bent 90 with Alternating Holes
+#
+3713.dat : 0 Technic Bush with Two Flanges
+32123a.dat : 0 Technic Bush  1/2 Smooth with Axle Hole Reduced
+#
+41678.dat : 0 Technic Cross Block 2 x 2 Split (Axle/Twin Pin)
+32291.dat : 0 Technic Cross Block 2 x 2 (Axle/Twin Pin)
+32557.dat : 0 Technic Cross Block 2 x 3 (Pin/Pin/Twin Pin)
+63869.dat : 0 Technic Cross Block 3 x 2 (Axle/Triple Pin)
+42003.dat : 0 Technic Cross Block 1 x 3 (Axle/Pin/Pin)
+32184.dat : 0 Technic Cross Block 1 x 3 (Axle/Pin/Axle)
+6536.dat : 0 Technic Cross Block 1 x 2 (Axle/Pin)
+#
+32013.dat : 0 Technic Angle Connector #1
+32014.dat : 0 Technic Angle Connector #6 (90 degree)
+32034.dat : 0 Technic Angle Connector #2 (180 degree)
+#
+3649.dat : 0 Technic Gear 40 Tooth
+3648b.dat : 0 Technic Gear 24 Tooth with Single Axle Hole
+3647.dat : 0 Technic Gear  8 Tooth
+32269.dat : 0 Technic Gear 20 Tooth Double Bevel
+32270.dat : 0 Technic Gear 12 Tooth Double Bevel
+#
+# 4263.dat : 0 Technic Plate  1 x  4 with Holes
+# 4262.dat : 0 Technic Plate  1 x  6 with Holes
+# 4442.dat : 0 Technic Plate  1 x  8 with Holes
+# 2719.dat : 0 Technic Plate  1 x 10 with Holes
+3709b.dat : 0 Technic Plate  2 x  4 with Holes
+32001.dat : 0 Technic Plate  2 x  6 with Holes
+3738.dat : 0 Technic Plate  2 x  8 with Holes

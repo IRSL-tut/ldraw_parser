@@ -1,6 +1,8 @@
 # exec(open('/choreonoid_ws/install/share/irsl_choreonoid/sample/irsl_import.py').read())
 import re
 
+LDU = 0.0004 ## LDraw Units
+
 # parts to be checked
 parts_list = [
     # Axle 3, 4, 6, 8
@@ -114,6 +116,10 @@ _cc_list_=('peghole.dat',
            'stud.dat', 'stud2.dat',
            )
 
+def get_first_line(fname):
+    with open(fname, 'r') as f:
+        return f.readline().strip()
+
 ### locations have to be checked INVERT 
 def checkCC(cc):
     if cc[1] in _cc_list_:
@@ -126,7 +132,7 @@ def checkCC(cc):
 #def checkCC(cc):
 #    return True
 
-def makeMeshes(pt, scale=0.0004):
+def makeMeshes(pt, scale=LDU):
     objs = []
     indices_4=[0, 1, 2, 0, 2, 3]
     indices_3=[0, 1, 2]
@@ -162,7 +168,7 @@ def convData(data):
         res[k] = _clusterData( data[k] )
     return res
 
-def getPos(dat, scale=0.0004):
+def getPos(dat, scale=LDU):
   return scale*dat[0][:3, 3]
 
 def getRot(dat):
@@ -170,12 +176,12 @@ def getRot(dat):
     print("det < 0, ", det[1])
   return dat[1]
 
-def makeCoords(dat, scale=0.0004):
+def makeCoords(dat, scale=LDU):
   res=coordinates(getPos(dat, scale=scale))
   res.rot = getRot(dat)
   return res
 
-#def makeCoords(data, scale=0.0004):
+#def makeCoords(data, scale=LDU):
 #    mat, rot, scl, name, inv, key = data
 #    pos = scale*mat[:3, 3]
 #    return coordinates(pos, rot)
@@ -184,12 +190,14 @@ def append_parts_list(fname, parts_list):
     re_exp = re.compile(r'(.*[^\s])\s*:.*')
     with open(fname, 'r') as f:
         for ln in f.read().split('\n'):
+            if len(ln) > 0 and ln[0] == '#':
+                continue
             res = re_exp.match(ln)
             if res:
                 nm = res.groups()[0]
                 parts_list.append(nm)
 
-def dumpData(parts_list, topDir='/tmp/', draw=False, scale=0.0004): ## di, lp, parts_list
+def dumpData(parts_list, topDir='/tmp/', draw=False, scale=LDU): ## di, lp, parts_list
     data = {}
     for pname in parts_list:
         pt=lp.instantiate(lib.loadParts(pname), lib)

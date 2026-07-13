@@ -85,7 +85,7 @@ class GL_connect(GenList):
         self.setType(tp)
     def print(self, coords, name='', offset=''):
         #super().print(coords, name=name, offset=offset)
-        trs = ru.make_translation_rotation(coords)
+        trs = ru.make_translation_rotation(coords.copy().rotate(PI, coordinates.Z))
         return f'''{offset}-
 {offset}  name: {name} # {self.ldraw_type}
 {offset}  types: [ PEG_P ]

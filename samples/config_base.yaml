@@ -21,7 +21,7 @@ ConnectingConstraintSettings:
   connecting-type-match-list:
     -
       pair: [PEG_P, PEG_H]
-      allowed-configuration: [flip-z, fixed]
+      allowed-configuration: [peg-fixed]
     -
       pair: [AXL_P, AXL_F]
       allowed-configuration: [fixed]
@@ -35,6 +35,9 @@ ConnectingConstraintSettings:
   connecting-configuration-list:
     -
       name: fixed
+      description: 'fixed with same coords'
+    -
+      name: peg-fixed
       description: 'fixed with same coords'
     -
       name: flip-z

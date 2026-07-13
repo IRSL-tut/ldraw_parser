@@ -21,10 +21,10 @@ ConnectingConstraintSettings:
   connecting-type-match-list:
     -
       pair: [PEG_P, PEG_H]
-      allowed-configuration: [flip-z, fixed]
+      allowed-configuration: [fixed, rot90+y, flip-y, rot90-y]
     -
       pair: [AXL_P, AXL_F]
-      allowed-configuration: [fixed]
+      allowed-configuration: [fixed, rot90+y, flip-y, rot90-y]
     -
       pair: [AXL_P, AXL_H]
       allowed-configuration: [flip-z, fixed]

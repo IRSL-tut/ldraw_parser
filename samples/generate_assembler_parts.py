@@ -85,7 +85,7 @@ class GL_connect(GenList):
         self.setType(tp)
     def print(self, coords, name='', offset=''):
         #super().print(coords, name=name, offset=offset)
-        trs = ru.make_translation_rotation(coords)
+        trs = ru.make_translation_rotation(coords.copy().rotate(PI, coordinates.Z).translate(fv(0, +LDU*2, 0)))
         return f'''{offset}-
 {offset}  name: {name} # {self.ldraw_type}
 {offset}  types: [ PEG_P ]
@@ -101,8 +101,13 @@ class GL_peghole(GenList):
         self.setType(tp)
     def print(self, coords, name='', offset=''):
         #super().print(coords, name=name, offset=offset)
-        trs = ru.make_translation_rotation(coords)
-        trs2 = ru.make_translation_rotation(coords.copy().translate(fv(0, LDU*4, 0)))
+        trs =  ru.make_translation_rotation(coords.copy().translate(fv(0, +LDU*2, 0)))
+        trs2 = ru.make_translation_rotation(coords.copy().translate(fv(0, -LDU*2, 0)))
+#>        return f'''{offset}-
+#>{offset}  name: {name} # {self.ldraw_type}
+#>{offset}  types: [ PEG_H ]
+#>{offset}  translation: {trs['translation']}
+#>{offset}  rotation: {trs['rotation']}'''
         return f'''{offset}-
 {offset}  name: {name} # {self.ldraw_type}
 {offset}  types: [ PEG_H ]

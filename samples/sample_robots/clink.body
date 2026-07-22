@@ -1,0 +1,962 @@
+format: ChoreonoidBody
+format_version: 2.0
+angle_unit: degree
+name: "40490.dat"
+root_link: "40490.dat_185600_4"
+links:
+  -
+    name: "40490.dat_185600_4"
+    translation: [ 0, 0.01546, 0 ]
+    joint_name: "40490.dat_185600_4"
+    joint_type: free
+    mass: 0.01
+    center_of_mass: [ 0, 0, 0 ]
+    inertia: [
+      1e-08, 0, 0,
+      0, 1e-08, 0,
+      0, 0, 1e-08 ]
+    elements:
+      -
+        type: Visual
+        elements:
+          -
+            type: Transform
+            name: 40490.dat_185600_4/visual
+            elements:
+              -
+                type: Transform
+                name: 40490.dat_185600_4/visual/geom_postrans
+                elements:
+                  -
+                    type: Shape
+                    name: 40490.dat_185600_4/visual/shape
+                    appearance:
+                      material:
+                        ambient: 0.7
+                        diffuse: [ 0.8, 0.3, 0.3 ]
+                    geometry:
+                      type: Resource
+                      uri: "../parts/40490.dat.stl"
+      -
+        type: Collision
+        elements:
+          -
+            type: Transform
+            name: 40490.dat_185600_4/collision
+            elements:
+              -
+                type: Transform
+                name: 40490.dat_185600_4/collision/geom_postrans
+                elements:
+                  -
+                    type: Shape
+                    name: 40490.dat_185600_4/collision/shape
+                    appearance:
+                      material:
+                        ambient: 0.7
+                        diffuse: [ 0.95, 0.95, 0.95 ]
+                    geometry:
+                      type: Resource
+                      uri: "../parts/40490.dat.stl"
+  -
+    name: "3673.dat_185600_3"
+    parent: "40490.dat_185600_4"
+    translation: [ 0, -0.0032, 0 ]
+    joint_name: "3673.dat_185600_3"
+    joint_type: revolute
+    joint_axis: [ -0, -1, -0 ]
+    joint_id: 0
+    joint_axis_inertia: 0.1
+    mass: 0.01
+    center_of_mass: [ 0, -0.0008, -3.9443e-35 ]
+    inertia: [
+      1e-08, 0, 0,
+      0, 1e-08, 4.93038e-40,
+      0, 4.93038e-40, 1e-08 ]
+    link_origin_to_self:
+      translation: [ 0.000000000000, -0.000800000000, 0.000000000000 ]
+      rotation: [ -0.577350269190, -0.577350269190, 0.577350269190, 2.094395102393 ]
+    elements:
+      -
+        type: Visual
+        elements:
+          -
+            type: Transform
+            name: 3673.dat_185600_3/visual
+            rotation: [ -0.57735026919, -0.57735026919, 0.57735026919, 120 ]
+            translation: [ 0, -0.0008, -3.94430452611e-35 ]
+            elements:
+              -
+                type: Transform
+                name: 3673.dat_185600_3/visual/geom_postrans
+                elements:
+                  -
+                    type: Shape
+                    name: 3673.dat_185600_3/visual/shape
+                    appearance:
+                      material:
+                        ambient: 0.7
+                        diffuse: [ 0.8, 0.3, 0.3 ]
+                    geometry:
+                      type: Resource
+                      uri: "../parts/3673.dat.stl"
+      -
+        type: Collision
+        elements:
+          -
+            type: Transform
+            name: 3673.dat_185600_3/collision
+            rotation: [ -0.57735026919, -0.57735026919, 0.57735026919, 120 ]
+            translation: [ 0, -0.0008, -3.94430452611e-35 ]
+            elements:
+              -
+                type: Transform
+                name: 3673.dat_185600_3/collision/geom_postrans
+                elements:
+                  -
+                    type: Shape
+                    name: 3673.dat_185600_3/collision/shape
+                    appearance:
+                      material:
+                        ambient: 0.7
+                        diffuse: [ 0.95, 0.95, 0.95 ]
+                    geometry:
+                      type: Resource
+                      uri: "../parts/3673.dat.stl"
+  -
+    name: "40490.dat_185600_5"
+    parent: "3673.dat_185600_3"
+    translation: [ 0, -0.0016, 1.77636e-19 ]
+    rotation: [ 0.707107, -1.96262e-16, -0.707107, 180 ]
+    joint_name: "40490.dat_185600_5"
+    joint_type: revolute
+    joint_axis: [ 0, 1, 0 ]
+    joint_id: 1
+    joint_axis_inertia: 0.1
+    mass: 0.01
+    center_of_mass: [ 0, 0.0032, 1.92593e-34 ]
+    inertia: [
+      1e-08, 0, 0,
+      0, 1e-08, 0,
+      0, 0, 1e-08 ]
+    link_origin_to_self:
+      translation: [ 0.000000000000, 0.003200000000, 0.000000000000 ]
+    elements:
+      -
+        type: Visual
+        elements:
+          -
+            type: Transform
+            name: 40490.dat_185600_5/visual
+            translation: [ 0, 0.0032, 1.92592994439e-34 ]
+            elements:
+              -
+                type: Transform
+                name: 40490.dat_185600_5/visual/geom_postrans
+                elements:
+                  -
+                    type: Shape
+                    name: 40490.dat_185600_5/visual/shape
+                    appearance:
+                      material:
+                        ambient: 0.7
+                        diffuse: [ 0.8, 0.3, 0.3 ]
+                    geometry:
+                      type: Resource
+                      uri: "../parts/40490.dat.stl"
+      -
+        type: Collision
+        elements:
+          -
+            type: Transform
+            name: 40490.dat_185600_5/collision
+            translation: [ 0, 0.0032, 1.92592994439e-34 ]
+            elements:
+              -
+                type: Transform
+                name: 40490.dat_185600_5/collision/geom_postrans
+                elements:
+                  -
+                    type: Shape
+                    name: 40490.dat_185600_5/collision/shape
+                    appearance:
+                      material:
+                        ambient: 0.7
+                        diffuse: [ 0.95, 0.95, 0.95 ]
+                    geometry:
+                      type: Resource
+                      uri: "../parts/40490.dat.stl"
+  -
+    name: "3673.dat_185600_1"
+    parent: "40490.dat_185600_5"
+    translation: [ 7.35791e-20, 0, 0.032 ]
+    rotation: [ 1.34693e-17, -1, 2.1252e-16, 180 ]
+    joint_name: "3673.dat_185600_1"
+    joint_type: revolute
+    joint_axis: [ -0, -1, -0 ]
+    joint_id: 2
+    joint_axis_inertia: 0.1
+    mass: 0.01
+    center_of_mass: [ 9.51299e-20, -0.0008, 6.93889e-18 ]
+    inertia: [
+      1e-08, 1.11022e-24, -1.11022e-24,
+      1.11022e-24, 1e-08, 1.11022e-24,
+      -1.11022e-24, 1.11022e-24, 1e-08 ]
+    link_origin_to_self:
+      translation: [ 0.000000000000, -0.000800000000, 0.000000000000 ]
+      rotation: [ -0.577350269190, 0.577350269190, -0.577350269190, 2.094395102393 ]
+    elements:
+      -
+        type: Visual
+        elements:
+          -
+            type: Transform
+            name: 3673.dat_185600_1/visual
+            rotation: [ -0.57735026919, 0.57735026919, -0.57735026919, 120 ]
+            translation: [ 9.51299316541e-20, -0.0008, 6.93889390391e-18 ]
+            elements:
+              -
+                type: Transform
+                name: 3673.dat_185600_1/visual/geom_postrans
+                elements:
+                  -
+                    type: Shape
+                    name: 3673.dat_185600_1/visual/shape
+                    appearance:
+                      material:
+                        ambient: 0.7
+                        diffuse: [ 0.8, 0.3, 0.3 ]
+                    geometry:
+                      type: Resource
+                      uri: "../parts/3673.dat.stl"
+      -
+        type: Collision
+        elements:
+          -
+            type: Transform
+            name: 3673.dat_185600_1/collision
+            rotation: [ -0.57735026919, 0.57735026919, -0.57735026919, 120 ]
+            translation: [ 9.51299316541e-20, -0.0008, 6.93889390391e-18 ]
+            elements:
+              -
+                type: Transform
+                name: 3673.dat_185600_1/collision/geom_postrans
+                elements:
+                  -
+                    type: Shape
+                    name: 3673.dat_185600_1/collision/shape
+                    appearance:
+                      material:
+                        ambient: 0.7
+                        diffuse: [ 0.95, 0.95, 0.95 ]
+                    geometry:
+                      type: Resource
+                      uri: "../parts/3673.dat.stl"
+  -
+    name: "40490.dat_185600_7"
+    parent: "3673.dat_185600_1"
+    translation: [ 1.92634e-18, -0.0016, 6.93889e-18 ]
+    rotation: [ 0.707107, 5.55112e-17, 0.707107, 180 ]
+    joint_name: "40490.dat_185600_7"
+    joint_type: revolute
+    joint_axis: [ 0, 1, 0 ]
+    joint_id: 3
+    joint_axis_inertia: 0.1
+    mass: 0.01
+    center_of_mass: [ 6.93889e-18, 0.0032, 0.032 ]
+    inertia: [
+      1e-08, 0, 0,
+      0, 1e-08, 0,
+      0, 0, 1e-08 ]
+    link_origin_to_self:
+      translation: [ 0.000000000000, 0.003200000000, 0.032000000000 ]
+    elements:
+      -
+        type: Visual
+        elements:
+          -
+            type: Transform
+            name: 40490.dat_185600_7/visual
+            translation: [ 6.93889390391e-18, 0.0032, 0.032 ]
+            elements:
+              -
+                type: Transform
+                name: 40490.dat_185600_7/visual/geom_postrans
+                elements:
+                  -
+                    type: Shape
+                    name: 40490.dat_185600_7/visual/shape
+                    appearance:
+                      material:
+                        ambient: 0.7
+                        diffuse: [ 0.8, 0.3, 0.3 ]
+                    geometry:
+                      type: Resource
+                      uri: "../parts/40490.dat.stl"
+      -
+        type: Collision
+        elements:
+          -
+            type: Transform
+            name: 40490.dat_185600_7/collision
+            translation: [ 6.93889390391e-18, 0.0032, 0.032 ]
+            elements:
+              -
+                type: Transform
+                name: 40490.dat_185600_7/collision/geom_postrans
+                elements:
+                  -
+                    type: Shape
+                    name: 40490.dat_185600_7/collision/shape
+                    appearance:
+                      material:
+                        ambient: 0.7
+                        diffuse: [ 0.95, 0.95, 0.95 ]
+                    geometry:
+                      type: Resource
+                      uri: "../parts/40490.dat.stl"
+  -
+    name: "3673.dat_185600_10"
+    parent: "40490.dat_185600_7"
+    translation: [ 6.93889e-18, 0, 0.064 ]
+    rotation: [ -0.633841, 0.5883, -0.502145, 6.48762e-14 ]
+    joint_name: "3673.dat_185600_10"
+    joint_type: revolute
+    joint_axis: [ -0, -1, -0 ]
+    joint_id: 4
+    joint_axis_inertia: 0.1
+    mass: 0.01
+    center_of_mass: [ 0, -0.0008, 0 ]
+    inertia: [
+      1e-08, 1.11022e-24, -1.66533e-24,
+      1.11022e-24, 1e-08, 1.11022e-24,
+      -1.66533e-24, 1.11022e-24, 1e-08 ]
+    link_origin_to_self:
+      translation: [ 0.000000000000, -0.000800000000, 0.000000000000 ]
+      rotation: [ -0.577350269190, 0.577350269190, -0.577350269190, 2.094395102393 ]
+    elements:
+      -
+        type: Visual
+        elements:
+          -
+            type: Transform
+            name: 3673.dat_185600_10/visual
+            rotation: [ -0.57735026919, 0.57735026919, -0.57735026919, 120 ]
+            translation: [ 0, -0.0008, 0 ]
+            elements:
+              -
+                type: Transform
+                name: 3673.dat_185600_10/visual/geom_postrans
+                elements:
+                  -
+                    type: Shape
+                    name: 3673.dat_185600_10/visual/shape
+                    appearance:
+                      material:
+                        ambient: 0.7
+                        diffuse: [ 0.8, 0.3, 0.3 ]
+                    geometry:
+                      type: Resource
+                      uri: "../parts/3673.dat.stl"
+      -
+        type: Collision
+        elements:
+          -
+            type: Transform
+            name: 3673.dat_185600_10/collision
+            rotation: [ -0.57735026919, 0.57735026919, -0.57735026919, 120 ]
+            translation: [ 0, -0.0008, 0 ]
+            elements:
+              -
+                type: Transform
+                name: 3673.dat_185600_10/collision/geom_postrans
+                elements:
+                  -
+                    type: Shape
+                    name: 3673.dat_185600_10/collision/shape
+                    appearance:
+                      material:
+                        ambient: 0.7
+                        diffuse: [ 0.95, 0.95, 0.95 ]
+                    geometry:
+                      type: Resource
+                      uri: "../parts/3673.dat.stl"
+  -
+    name: "40490.dat_185600_9"
+    parent: "3673.dat_185600_10"
+    translation: [ 0, -0.0016, 0 ]
+    rotation: [ 0.707107, -1.96262e-17, 0.707107, 180 ]
+    joint_name: "40490.dat_185600_9"
+    joint_type: revolute
+    joint_axis: [ 0, 1, 0 ]
+    joint_id: 5
+    joint_axis_inertia: 0.1
+    mass: 0.01
+    center_of_mass: [ -1.38778e-17, 0.0032, -0.032 ]
+    inertia: [
+      1e-08, 0, 0,
+      0, 1e-08, 0,
+      0, 0, 1e-08 ]
+    link_origin_to_self:
+      translation: [ 0.000000000000, 0.003200000000, -0.032000000000 ]
+    elements:
+      -
+        type: Visual
+        elements:
+          -
+            type: Transform
+            name: 40490.dat_185600_9/visual
+            translation: [ -1.38777878078e-17, 0.0032, -0.032 ]
+            elements:
+              -
+                type: Transform
+                name: 40490.dat_185600_9/visual/geom_postrans
+                elements:
+                  -
+                    type: Shape
+                    name: 40490.dat_185600_9/visual/shape
+                    appearance:
+                      material:
+                        ambient: 0.7
+                        diffuse: [ 0.8, 0.3, 0.3 ]
+                    geometry:
+                      type: Resource
+                      uri: "../parts/40490.dat.stl"
+      -
+        type: Collision
+        elements:
+          -
+            type: Transform
+            name: 40490.dat_185600_9/collision
+            translation: [ -1.38777878078e-17, 0.0032, -0.032 ]
+            elements:
+              -
+                type: Transform
+                name: 40490.dat_185600_9/collision/geom_postrans
+                elements:
+                  -
+                    type: Shape
+                    name: 40490.dat_185600_9/collision/shape
+                    appearance:
+                      material:
+                        ambient: 0.7
+                        diffuse: [ 0.95, 0.95, 0.95 ]
+                    geometry:
+                      type: Resource
+                      uri: "../parts/40490.dat.stl"
+  -
+    name: "3673.dat_192541_1"
+    parent: "40490.dat_185600_9"
+    translation: [ -1.38778e-17, 0, -0.032 ]
+    rotation: [ 2.77556e-17, 1, 2.498e-16, 90 ]
+    joint_name: "3673.dat_192541_1"
+    joint_type: revolute
+    joint_axis: [ -0, -1, -0 ]
+    joint_id: 6
+    joint_axis_inertia: 0.1
+    mass: 0.01
+    center_of_mass: [ 0, -0.0008, 0 ]
+    inertia: [
+      1e-08, 1.10203e-39, 1.10203e-39,
+      1.10203e-39, 1e-08, -4.93038e-40,
+      9.86076e-40, -7.34684e-40, 1e-08 ]
+    link_origin_to_self:
+      translation: [ 0.000000000000, -0.000800000000, 0.000000000000 ]
+      rotation: [ -0.577350269190, 0.577350269190, -0.577350269190, 2.094395102393 ]
+    elements:
+      -
+        type: Visual
+        elements:
+          -
+            type: Transform
+            name: 3673.dat_192541_1/visual
+            rotation: [ -0.57735026919, 0.57735026919, -0.57735026919, 120 ]
+            translation: [ 0, -0.0008, 0 ]
+            elements:
+              -
+                type: Transform
+                name: 3673.dat_192541_1/visual/geom_postrans
+                elements:
+                  -
+                    type: Shape
+                    name: 3673.dat_192541_1/visual/shape
+                    appearance:
+                      material:
+                        ambient: 0.7
+                        diffuse: [ 0.8, 0.3, 0.3 ]
+                    geometry:
+                      type: Resource
+                      uri: "../parts/3673.dat.stl"
+      -
+        type: Collision
+        elements:
+          -
+            type: Transform
+            name: 3673.dat_192541_1/collision
+            rotation: [ -0.57735026919, 0.57735026919, -0.57735026919, 120 ]
+            translation: [ 0, -0.0008, 0 ]
+            elements:
+              -
+                type: Transform
+                name: 3673.dat_192541_1/collision/geom_postrans
+                elements:
+                  -
+                    type: Shape
+                    name: 3673.dat_192541_1/collision/shape
+                    appearance:
+                      material:
+                        ambient: 0.7
+                        diffuse: [ 0.95, 0.95, 0.95 ]
+                    geometry:
+                      type: Resource
+                      uri: "../parts/3673.dat.stl"
+  -
+    name: "3673.dat_192541_0"
+    parent: "40490.dat_185600_7"
+    translation: [ 0, 0, 0.032 ]
+    rotation: [ -0.633841, 0.5883, -0.502145, 6.48762e-14 ]
+    joint_name: "3673.dat_192541_0"
+    joint_type: revolute
+    joint_axis: [ -0, -1, -0 ]
+    joint_id: 7
+    joint_axis_inertia: 0.1
+    mass: 0.01
+    center_of_mass: [ 0, -0.0008, 0 ]
+    inertia: [
+      1e-08, 1.11022e-24, -1.66533e-24,
+      1.11022e-24, 1e-08, 1.11022e-24,
+      -1.66533e-24, 1.11022e-24, 1e-08 ]
+    link_origin_to_self:
+      translation: [ 0.000000000000, -0.000800000000, 0.000000000000 ]
+      rotation: [ -0.577350269190, 0.577350269190, -0.577350269190, 2.094395102393 ]
+    elements:
+      -
+        type: Visual
+        elements:
+          -
+            type: Transform
+            name: 3673.dat_192541_0/visual
+            rotation: [ -0.57735026919, 0.57735026919, -0.57735026919, 120 ]
+            translation: [ 0, -0.0008, 0 ]
+            elements:
+              -
+                type: Transform
+                name: 3673.dat_192541_0/visual/geom_postrans
+                elements:
+                  -
+                    type: Shape
+                    name: 3673.dat_192541_0/visual/shape
+                    appearance:
+                      material:
+                        ambient: 0.7
+                        diffuse: [ 0.8, 0.3, 0.3 ]
+                    geometry:
+                      type: Resource
+                      uri: "../parts/3673.dat.stl"
+      -
+        type: Collision
+        elements:
+          -
+            type: Transform
+            name: 3673.dat_192541_0/collision
+            rotation: [ -0.57735026919, 0.57735026919, -0.57735026919, 120 ]
+            translation: [ 0, -0.0008, 0 ]
+            elements:
+              -
+                type: Transform
+                name: 3673.dat_192541_0/collision/geom_postrans
+                elements:
+                  -
+                    type: Shape
+                    name: 3673.dat_192541_0/collision/shape
+                    appearance:
+                      material:
+                        ambient: 0.7
+                        diffuse: [ 0.95, 0.95, 0.95 ]
+                    geometry:
+                      type: Resource
+                      uri: "../parts/3673.dat.stl"
+  -
+    name: "3673.dat_185600_2"
+    parent: "40490.dat_185600_4"
+    translation: [ -1.77636e-19, -0.0032, 0.032 ]
+    joint_name: "3673.dat_185600_2"
+    joint_type: revolute
+    joint_axis: [ -0, -1, -0 ]
+    joint_id: 8
+    joint_axis_inertia: 0.1
+    mass: 0.01
+    center_of_mass: [ 1.77636e-19, -0.0008, 0 ]
+    inertia: [
+      1e-08, 2.22045e-24, -2.22045e-24,
+      2.22045e-24, 1e-08, 2.22045e-24,
+      -2.22045e-24, 2.22045e-24, 1e-08 ]
+    link_origin_to_self:
+      translation: [ 0.000000000000, -0.000800000000, 0.000000000000 ]
+      rotation: [ -0.577350269190, 0.577350269190, -0.577350269190, 2.094395102393 ]
+    elements:
+      -
+        type: Visual
+        elements:
+          -
+            type: Transform
+            name: 3673.dat_185600_2/visual
+            rotation: [ -0.57735026919, 0.57735026919, -0.57735026919, 120 ]
+            translation: [ 1.7763568394e-19, -0.0008, 0 ]
+            elements:
+              -
+                type: Transform
+                name: 3673.dat_185600_2/visual/geom_postrans
+                elements:
+                  -
+                    type: Shape
+                    name: 3673.dat_185600_2/visual/shape
+                    appearance:
+                      material:
+                        ambient: 0.7
+                        diffuse: [ 0.8, 0.3, 0.3 ]
+                    geometry:
+                      type: Resource
+                      uri: "../parts/3673.dat.stl"
+      -
+        type: Collision
+        elements:
+          -
+            type: Transform
+            name: 3673.dat_185600_2/collision
+            rotation: [ -0.57735026919, 0.57735026919, -0.57735026919, 120 ]
+            translation: [ 1.7763568394e-19, -0.0008, 0 ]
+            elements:
+              -
+                type: Transform
+                name: 3673.dat_185600_2/collision/geom_postrans
+                elements:
+                  -
+                    type: Shape
+                    name: 3673.dat_185600_2/collision/shape
+                    appearance:
+                      material:
+                        ambient: 0.7
+                        diffuse: [ 0.95, 0.95, 0.95 ]
+                    geometry:
+                      type: Resource
+                      uri: "../parts/3673.dat.stl"
+  -
+    name: "40490.dat_185600_6"
+    parent: "3673.dat_185600_2"
+    translation: [ 1.77636e-19, -0.0016, 0 ]
+    rotation: [ 0.707107, -7.85046e-17, -0.707107, 180 ]
+    joint_name: "40490.dat_185600_6"
+    joint_type: revolute
+    joint_axis: [ 0, 1, 0 ]
+    joint_id: 9
+    joint_axis_inertia: 0.1
+    mass: 0.01
+    center_of_mass: [ 0, 0.0032, 0.032 ]
+    inertia: [
+      1e-08, 0, 0,
+      0, 1e-08, 0,
+      0, 0, 1e-08 ]
+    link_origin_to_self:
+      translation: [ 0.000000000000, 0.003200000000, 0.032000000000 ]
+    elements:
+      -
+        type: Visual
+        elements:
+          -
+            type: Transform
+            name: 40490.dat_185600_6/visual
+            translation: [ 0, 0.0032, 0.032 ]
+            elements:
+              -
+                type: Transform
+                name: 40490.dat_185600_6/visual/geom_postrans
+                elements:
+                  -
+                    type: Shape
+                    name: 40490.dat_185600_6/visual/shape
+                    appearance:
+                      material:
+                        ambient: 0.7
+                        diffuse: [ 0.8, 0.3, 0.3 ]
+                    geometry:
+                      type: Resource
+                      uri: "../parts/40490.dat.stl"
+      -
+        type: Collision
+        elements:
+          -
+            type: Transform
+            name: 40490.dat_185600_6/collision
+            translation: [ 0, 0.0032, 0.032 ]
+            elements:
+              -
+                type: Transform
+                name: 40490.dat_185600_6/collision/geom_postrans
+                elements:
+                  -
+                    type: Shape
+                    name: 40490.dat_185600_6/collision/shape
+                    appearance:
+                      material:
+                        ambient: 0.7
+                        diffuse: [ 0.95, 0.95, 0.95 ]
+                    geometry:
+                      type: Resource
+                      uri: "../parts/40490.dat.stl"
+  -
+    name: "3673.dat_185600_0"
+    parent: "40490.dat_185600_6"
+    translation: [ -6.93889e-18, 0, 0.064 ]
+    rotation: [ 3.30376e-14, -0.989446, -0.144901, 2.57158e-14 ]
+    joint_name: "3673.dat_185600_0"
+    joint_type: revolute
+    joint_axis: [ -0, -1, -0 ]
+    joint_id: 10
+    joint_axis_inertia: 0.1
+    mass: 0.01
+    center_of_mass: [ 0, -0.0008, 0 ]
+    inertia: [
+      1e-08, -1.66533e-24, 1.66533e-24,
+      -1.66533e-24, 1e-08, -1.66533e-24,
+      1.66533e-24, -1.66533e-24, 1e-08 ]
+    link_origin_to_self:
+      translation: [ 0.000000000000, -0.000800000000, 0.000000000000 ]
+      rotation: [ -0.577350269190, 0.577350269190, -0.577350269190, 2.094395102393 ]
+    elements:
+      -
+        type: Visual
+        elements:
+          -
+            type: Transform
+            name: 3673.dat_185600_0/visual
+            rotation: [ -0.57735026919, 0.57735026919, -0.57735026919, 120 ]
+            translation: [ 0, -0.0008, 0 ]
+            elements:
+              -
+                type: Transform
+                name: 3673.dat_185600_0/visual/geom_postrans
+                elements:
+                  -
+                    type: Shape
+                    name: 3673.dat_185600_0/visual/shape
+                    appearance:
+                      material:
+                        ambient: 0.7
+                        diffuse: [ 0.8, 0.3, 0.3 ]
+                    geometry:
+                      type: Resource
+                      uri: "../parts/3673.dat.stl"
+      -
+        type: Collision
+        elements:
+          -
+            type: Transform
+            name: 3673.dat_185600_0/collision
+            rotation: [ -0.57735026919, 0.57735026919, -0.57735026919, 120 ]
+            translation: [ 0, -0.0008, 0 ]
+            elements:
+              -
+                type: Transform
+                name: 3673.dat_185600_0/collision/geom_postrans
+                elements:
+                  -
+                    type: Shape
+                    name: 3673.dat_185600_0/collision/shape
+                    appearance:
+                      material:
+                        ambient: 0.7
+                        diffuse: [ 0.95, 0.95, 0.95 ]
+                    geometry:
+                      type: Resource
+                      uri: "../parts/3673.dat.stl"
+  -
+    name: "40490.dat_185600_8"
+    parent: "3673.dat_185600_0"
+    translation: [ 0, -0.0016, 0 ]
+    rotation: [ -0.707107, -1.66533e-16, -0.707107, 180 ]
+    joint_name: "40490.dat_185600_8"
+    joint_type: revolute
+    joint_axis: [ 0, 1, 0 ]
+    joint_id: 11
+    joint_axis_inertia: 0.1
+    mass: 0.01
+    center_of_mass: [ 1.38778e-17, 0.0032, -0.032 ]
+    inertia: [
+      1e-08, 0, 0,
+      0, 1e-08, 0,
+      0, 0, 1e-08 ]
+    link_origin_to_self:
+      translation: [ 0.000000000000, 0.003200000000, -0.032000000000 ]
+    elements:
+      -
+        type: Visual
+        elements:
+          -
+            type: Transform
+            name: 40490.dat_185600_8/visual
+            translation: [ 1.38777878078e-17, 0.0032, -0.032 ]
+            elements:
+              -
+                type: Transform
+                name: 40490.dat_185600_8/visual/geom_postrans
+                elements:
+                  -
+                    type: Shape
+                    name: 40490.dat_185600_8/visual/shape
+                    appearance:
+                      material:
+                        ambient: 0.7
+                        diffuse: [ 0.8, 0.3, 0.3 ]
+                    geometry:
+                      type: Resource
+                      uri: "../parts/40490.dat.stl"
+      -
+        type: Collision
+        elements:
+          -
+            type: Transform
+            name: 40490.dat_185600_8/collision
+            translation: [ 1.38777878078e-17, 0.0032, -0.032 ]
+            elements:
+              -
+                type: Transform
+                name: 40490.dat_185600_8/collision/geom_postrans
+                elements:
+                  -
+                    type: Shape
+                    name: 40490.dat_185600_8/collision/shape
+                    appearance:
+                      material:
+                        ambient: 0.7
+                        diffuse: [ 0.95, 0.95, 0.95 ]
+                    geometry:
+                      type: Resource
+                      uri: "../parts/40490.dat.stl"
+roboasm:
+  history:
+    -
+      parts-name: 40490.dat_185600_4
+      parts-type: 40490.dat
+      initial-parts: true
+    -
+      parts-name: 3673.dat_185600_3
+      parts-type: 3673.dat
+      parts-point: cn001
+      parent: 40490.dat_185600_4
+      parent-point: cn014
+    -
+      parts-name: 40490.dat_185600_5
+      parts-type: 40490.dat
+      parts-point: cn014
+      parent: 3673.dat_185600_3
+      parent-point: cn000
+      connecting-offset:
+        rotation: [ 0.000000000000, 1.000000000000, 0.000000000000, 1.570796326795 ]
+    -
+      parts-name: 3673.dat_185600_1
+      parts-type: 3673.dat
+      parts-point: cn000
+      parent: 40490.dat_185600_5
+      parent-point: cn010
+      connecting-offset:
+        rotation: [ 0.000000000000, -1.000000000000, 0.000000000000, 3.141592653590 ]
+    -
+      parts-name: 40490.dat_185600_7
+      parts-type: 40490.dat
+      parts-point: cn000
+      parent: 3673.dat_185600_1
+      parent-point: cn001
+      connecting-offset:
+        rotation: [ 0.000000000000, -1.000000000000, 0.000000000000, 1.570796326795 ]
+    -
+      parts-name: 3673.dat_185600_10
+      parts-type: 3673.dat
+      parts-point: cn000
+      parent: 40490.dat_185600_7
+      parent-point: cn010
+    -
+      parts-name: 40490.dat_185600_9
+      parts-type: 40490.dat
+      parts-point: cn010
+      parent: 3673.dat_185600_10
+      parent-point: cn001
+      connecting-offset:
+        rotation: [ 0.000000000000, -1.000000000000, 0.000000000000, 1.570796326795 ]
+    -
+      parts-name: 3673.dat_192541_1
+      parts-type: 3673.dat
+      parts-point: cn000
+      parent: 40490.dat_185600_9
+      parent-point: cn014
+      connecting-offset:
+        rotation: [ 0.000000000000, 1.000000000000, 0.000000000000, 1.570796326795 ]
+    -
+      parts-name: 3673.dat_192541_0
+      parts-type: 3673.dat
+      parts-point: cn000
+      parent: 40490.dat_185600_7
+      parent-point: cn014
+    -
+      parts-name: 3673.dat_185600_2
+      parts-type: 3673.dat
+      parts-point: cn000
+      parent: 40490.dat_185600_4
+      parent-point: cn010
+    -
+      parts-name: 40490.dat_185600_6
+      parts-type: 40490.dat
+      parts-point: cn000
+      parent: 3673.dat_185600_2
+      parent-point: cn001
+      connecting-offset:
+        rotation: [ 0.000000000000, 1.000000000000, 0.000000000000, 1.570796326795 ]
+    -
+      parts-name: 3673.dat_185600_0
+      parts-type: 3673.dat
+      parts-point: cn000
+      parent: 40490.dat_185600_6
+      parent-point: cn010
+    -
+      parts-name: 40490.dat_185600_8
+      parts-type: 40490.dat
+      parts-point: cn010
+      parent: 3673.dat_185600_0
+      parent-point: cn001
+      connecting-offset:
+        rotation: [ 0.000000000000, -1.000000000000, 0.000000000000, 1.570796326795 ]
+  robot-info:
+    name: 40490.dat
+  actuator-info:
+    3673.dat_185600_3/cn001:
+      current-angle: 0.000000000000
+  virtual-attach-info:
+    virtual_joints:
+      va0:
+        link1:
+          local_pos:
+            rotation: [ 0.577350269190, 0.577350269190, -0.577350269190, 2.094395102393 ]
+            translation: [ 0.000800000000, 0.000000000000, 0.000000000000 ]
+          name: 3673.dat_192541_0
+          point: 3673.dat_192541_0/cn001
+        link2:
+          local_pos:
+            translation: [ 0.000000000000, -0.003200000000, 0.000000000000 ]
+          name: 40490.dat_185600_6
+          point: 40490.dat_185600_6/cn014
+        name: va0
+        weight: [ 1.000000000000, 0.000000000000, 1.000000000000, 0.000000000000, 0.000000000000, 0.000000000000 ]
+      va1:
+        link1:
+          local_pos:
+            rotation: [ 0.577350269190, 0.577350269190, -0.577350269190, 2.094395102393 ]
+            translation: [ 0.000800000000, 0.000000000000, 0.000000000000 ]
+          name: 3673.dat_192541_1
+          point: 3673.dat_192541_1/cn001
+        link2:
+          local_pos:
+            translation: [ 0.000000000000, -0.003200000000, 0.000000000000 ]
+          name: 40490.dat_185600_8
+          point: 40490.dat_185600_8/cn014
+        name: va1
+        weight: [ 1.000000000000, 0.000000000000, 1.000000000000, 0.000000000000, 0.000000000000, 0.000000000000 ]

@@ -30,3 +30,25 @@ choreonoid $RADIR/layout/assembler.cnoid --original-project $RADIR/layout/origin
 ## sample using parts
 
 sample_parts.py
+
+
+## Handling model for closed IK
+
+Merge redundant joints
+~~~
+exec(open('robotmodel_with_closedlink.py').read())
+rb=RobotModel.loadModel('sample_robots/clink.body'); bd = rb.robot
+mergeRedundantJoints(bd) ## merge redundant joints
+iu.exportBody('sample_robots/clink_merged.body', bd, extModelFileMode=1, filePrefix=None)
+~~~
+
+**Required to add target_joints tag to .body**
+
+Using Model
+~~~
+exec(open('robotmodel_with_closedlink.py').read())
+robot = RobotModelWithClosedLink.loadModelItem('sample_robots/clink_merged.body')
+## check IK ##
+robot._closedIK() ## return 0 is success
+av=robot.angleVector(); av[0]=PI/16*1; robot.angleVector(av)
+~~~

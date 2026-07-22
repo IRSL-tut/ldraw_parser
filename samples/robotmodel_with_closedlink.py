@@ -202,8 +202,8 @@ class RobotModelWithClosedLink(RobotModel):
         #
         self._initializeIK(**kwargs)
         #
-        if 'target_joints' in self.closeLinkSettings:
-            target_joints = self.closeLinkSettings['target_joints']
+        if 'target_joints' in self.closedLinkSettings:
+            target_joints = self.closedLinkSettings['target_joints']
             self.setTargetJoints(target_joints)
 
     def _parseMergeInfo(self):
@@ -307,6 +307,7 @@ class RobotModelWithClosedLink(RobotModel):
                 #j_constraint.maxError  =
                 j_const.precision = 5e-5
                 self.constraints2.push_back(j_const)
+        dummy_const = IK.Constraints()
         self.ik_constraints = [ dummy_const, self.constraints0, self.constraints1, self.constraints2 ]
 
     def enableHook(self, on=True):
@@ -333,8 +334,14 @@ class RobotModelWithClosedLink(RobotModel):
         return super().setAngleMap(angle_map)
 
 ## exec(open('/choreonoid_ws/install/share/irsl_choreonoid/sample/irsl_import.py').read()) ##
+## ## making model with merged joints  ##
 ## exec(open('robotmodel_with_closedlink.py').read())
-## robot = RobotModelWithClosedLink.loadModelItem('clink.body')
-## robot.arm.angleVector([0.4])
+## rb=RobotModel.loadModel('sample_robots/clink.body'); bd = rb.robot
+## mergeRedundantJoints(bd)
+## iu.exportBody('sample_robots/clink_merged.body', bd, extModelFileMode=1, filePrefix=None)
+## ## using model ##
+## exec(open('robotmodel_with_closedlink.py').read())
+## robot = RobotModelWithClosedLink.loadModelItem('sample_robots/clink_merged.body')
 ## ## check IK ##
 ## robot._closedIK() ## return 0 is success
+## av=robot.angleVector(); av[0]=PI/16*1; robot.angleVector(av)

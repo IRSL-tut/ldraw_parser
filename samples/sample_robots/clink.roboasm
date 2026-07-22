@@ -1,0 +1,126 @@
+actuator-info:
+  3673.dat_185600_3/cn001:
+    current-angle: 0.000000000000
+history:
+  -
+    initial-parts: true
+    parts-name: 40490.dat_185600_4
+    parts-type: 40490.dat
+  -
+    parent: 40490.dat_185600_4
+    parent-point: cn010
+    parts-name: 3673.dat_185600_2
+    parts-point: cn000
+    parts-type: 3673.dat
+  -
+    connecting-offset:
+      rotation: [ 0.000000000000, 1.000000000000, 0.000000000000, 1.570796326795 ]
+    parent: 3673.dat_185600_2
+    parent-point: cn001
+    parts-name: 40490.dat_185600_6
+    parts-point: cn000
+    parts-type: 40490.dat
+  -
+    parent: 40490.dat_185600_6
+    parent-point: cn010
+    parts-name: 3673.dat_185600_0
+    parts-point: cn000
+    parts-type: 3673.dat
+  -
+    connecting-offset:
+      rotation: [ 0.000000000000, -1.000000000000, 0.000000000000, 1.570796326795 ]
+    parent: 3673.dat_185600_0
+    parent-point: cn001
+    parts-name: 40490.dat_185600_8
+    parts-point: cn010
+    parts-type: 40490.dat
+  -
+    parent: 40490.dat_185600_4
+    parent-point: cn014
+    parts-name: 3673.dat_185600_3
+    parts-point: cn001
+    parts-type: 3673.dat
+  -
+    connecting-offset:
+      rotation: [ 0.000000000000, 1.000000000000, 0.000000000000, 1.570796326795 ]
+    parent: 3673.dat_185600_3
+    parent-point: cn000
+    parts-name: 40490.dat_185600_5
+    parts-point: cn014
+    parts-type: 40490.dat
+  -
+    connecting-offset:
+      rotation: [ 0.000000000000, 1.000000000000, 0.000000000000, 3.141592653590 ]
+    parent: 40490.dat_185600_5
+    parent-point: cn010
+    parts-name: 3673.dat_185600_1
+    parts-point: cn000
+    parts-type: 3673.dat
+  -
+    connecting-offset:
+      rotation: [ 0.000000000000, -1.000000000000, 0.000000000000, 1.570796326795 ]
+    parent: 3673.dat_185600_1
+    parent-point: cn001
+    parts-name: 40490.dat_185600_7
+    parts-point: cn000
+    parts-type: 40490.dat
+  -
+    parent: 40490.dat_185600_7
+    parent-point: cn010
+    parts-name: 3673.dat_185600_10
+    parts-point: cn000
+    parts-type: 3673.dat
+  -
+    connecting-offset:
+      rotation: [ 0.000000000000, -1.000000000000, 0.000000000000, 1.570796326795 ]
+    parent: 3673.dat_185600_10
+    parent-point: cn001
+    parts-name: 40490.dat_185600_9
+    parts-point: cn010
+    parts-type: 40490.dat
+  -
+    connecting-offset:
+      rotation: [ 0.000000000000, 1.000000000000, 0.000000000000, 1.570796326795 ]
+    parent: 40490.dat_185600_9
+    parent-point: cn014
+    parts-name: 3673.dat_192541_1
+    parts-point: cn000
+    parts-type: 3673.dat
+  -
+    parent: 40490.dat_185600_7
+    parent-point: cn014
+    parts-name: 3673.dat_192541_0
+    parts-point: cn000
+    parts-type: 3673.dat
+robot-info:
+  name: 40490.dat
+virtual-attach-info:
+  virtual_joints:
+    va0:
+      link1:
+        local_pos:
+          rotation: [ 0.577350269190, 0.577350269190, -0.577350269190, 2.094395102393 ]
+          translation: [ 0.000800000000, 0.000000000000, 0.000000000000 ]
+        name: 3673.dat_192541_0
+        point: 3673.dat_192541_0/cn001
+      link2:
+        local_pos:
+          translation: [ 0.000000000000, -0.003200000000, 0.000000000000 ]
+        name: 40490.dat_185600_6
+        point: 40490.dat_185600_6/cn014
+      name: va0
+      weight: [ 0.000000000000, 0.000000000000, 0.000000000000, 0.000000000000, 0.000000000000, 0.000000000000 ]
+    va1:
+      link1:
+        local_pos:
+          rotation: [ 0.577350269190, 0.577350269190, -0.577350269190, 2.094395102393 ]
+          translation: [ 0.000800000000, 0.000000000000, 0.000000000000 ]
+        name: 3673.dat_192541_1
+        point: 3673.dat_192541_1/cn001
+      link2:
+        local_pos:
+          translation: [ 0.000000000000, -0.003200000000, 0.000000000000 ]
+        name: 40490.dat_185600_8
+        point: 40490.dat_185600_8/cn014
+      name: va1
+      weight: [ 0.000000000000, 0.000000000000, 0.000000000000, 0.000000000000, 0.000000000000, 0.000000000000 ]

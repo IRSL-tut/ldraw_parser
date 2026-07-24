@@ -155,10 +155,11 @@ class GL_stud(GenList):
         super().__init__()
         self.setType(tp)
     def print(self, coords, name='', offset=''):
-        trs = ru.make_translation_rotation(coords.copy().rotate(PI, coordinates.Z))
+        # trs = ru.make_translation_rotation(coords.copy().rotate(PI, coordinates.Z)) ## y-up
+        trs = ru.make_translation_rotation(coords.copy().rotate(PI/2, coordinates.X)) ## z-up
         return f'''{offset}-
 {offset}  name: {name} # {self.ldraw_type}
-{offset}  types: [ STUD_P ]
+{offset}  types: [ PC1 ]
 {offset}  translation: {trs['translation']}
 {offset}  rotation: {trs['rotation']}'''
 
@@ -180,11 +181,12 @@ class OppositeStud(object):
                     nm = f'{self.prefix}{self.cntr:03}'
                     self.cntr += 1
                     coords = makeCoords(itpl)
-                    coords.rotate(PI, coordinates.Z).translate(fv(0, self.offset*LDU, 0))
+                    # coords.rotate(PI, coordinates.Z).translate(fv(0, self.offset*LDU, 0))
+                    coords.rotate(PI/2, coordinates.X).translate(fv(0, 0, self.offset*LDU))
                     trs = ru.make_translation_rotation(coords)
                     res.append(f'''{offset}-
 {offset}  name: {nm} # opposite {typename}
-{offset}  types: [ STUD_H ]
+{offset}  types: [ SC1 ]
 {offset}  translation: {trs['translation']}
 {offset}  rotation: {trs['rotation']}''')
         return res
